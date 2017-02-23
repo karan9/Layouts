@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;                                                 
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+}
+header ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+header > .brand-logo {
+    font-size: 38px;
+}
+
+header > nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111;
+    border-radius: 10px;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: inherit;
+    margin-bottom: 0px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > nav > ul > li {
+    height: 100%;
+    width: 16.66%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+header > nav > ul > li:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header > nav > ul > li:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header > nav > ul > li:hover {
+    background: #555; 
+}
+
+header > nav > ul > li.active {
+    background: #555;
+}
+
+/************************  Sections  *****************************/
+section#jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+}
+
+section#jumbotron .section-header, section#jumbotron .section-body, section#jumbotron .section-footer {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+section#jumbotron .section-header h1 {
+    font-size: 55px;
+    margin: 0px;
+}
+
+section#jumbotron .section-body {
+    width: 75%;
+}
+
+section#jumbotron .section-body p {
+    font-size: 1.3em;
+}
+
+section#jumbotron .section-footer button {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 10px;
+    background: green;
+    transition: background 0.3s ease-out;
+}
+
+section#jumbotron .section-footer button:hover {
+    background-color: lightgreen;
+}
+
+/**************************** section features ****************************/
+section#features {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section#features div[class *= "section-box"] {
+    width: 31%;
+}
+
+section#features div[class *= "section-box"] button {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 10px;
+    background: blue;
+    transition: background 0.3s ease-out;
+}
+
+section#features div[class *= "section-box"] h2 {
+    font-size: 2.0em;
+}
+
+section#features div[class *= "section-box"] p {
+    font-size: 1.21em;
+}
+
+/*********** hr ******************/
+hr.seprator {
+    width: 90%;
+    margin: 20px auto;
+    color: grey;
+}
+
+/****************** footer ******************/
+footer {
+    height: 100px;
+    width: 100%;
+    font-size: 1.13em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
